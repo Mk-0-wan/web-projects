@@ -1,0 +1,152 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:'Work Sans', sans serif;
+}
+
+.container{
+	background-image: url("./image.jpg");
+	background-position:center;
+	background-size:cover;
+	width:100vw;
+	height:100vh;
+	background-repeat:none;
+	z-index:2000;
+}
+
+li a {
+	text-decoration:none;
+	color:white;
+	font: x-large 300;
+}
+
+header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 2em 3em;
+}
+.nav_links li {
+	display:inline-block;
+	padding:0px 20px;
+	list-style-type:none;
+	font-size:large;
+}
+
+.nav_links li a{
+	transition:all 0.3s ease-in-out 0s;
+}
+
+.nav_links li a:hover{
+	color:#f2334d;
+}
+
+.emoji{
+	cursor:pointer;
+	color:white;
+	font-size:xx-large;
+	font-weight:400;
+}
+
+.btn1{
+	border: 3px solid white;
+	padding:.45em;
+	font: italic large;
+}
+
+.btn2{
+	border: 3px black solid;
+	font: italic large;
+	padding:.45em;
+	background:black;
+	color:white;
+}
+
+.hero{
+	text-align:center;
+	font-size:4em;
+	font-weight:500;
+	font-style:italic;
+	margin-top:48px;
+	color:white;
+}
+
+.price{
+	display:flex;
+	margin-top:2em;
+	padding: 3em;
+}
+
+.boxes{
+	flex-grow:1;
+	align-content:center;
+}
+
+.boxes.box1{
+	background-color:white;
+	color:black;
+	padding:1em;
+	text-align:center;
+}
+.boxes.box2{
+	background:#800080;
+	padding:1em;
+	color:black;
+	text-align:center;
+}
+.boxes.box3{
+	background:black;
+	padding:1em;
+	color:white;
+	text-align:center;
+}
+
+div .starter{
+	font-family:"Work Sans", sans serif;
+	font-size: larger;
+	font-weight: 400;
+	margin-bottom:1em;
+}
+div .Novice{
+	font-family:"Work Sans", sans serif;
+	font-size: larger;
+	font-weight:400;
+	margin-bottom:1em;
+}
+
+div .pro{
+	font-family:"Work Sans", sans serif;
+	font-size:larger;
+	font-weight:400;
+	margin-bottom:1em;
+}
+.amount{
+	font-size:4em;
+	font-weight:700;
+	font-family:"Work Sans", sans serif;
+	margin-bottom:.51em;
+}
+
+.text{
+	margin-bottom:1em;
+	color:grey;
+}
+
+.packages.Novice{
+	color: black;
+	margin-top:3em;
+}
+.packages.pro{
+	color:white;
+	margin-top:3em;
+}
+button{
+	border: 3px solid white;
+	padding:.45em;
+	font: italic large;
+	margin-top:auto;
+}
+
+
+
+
