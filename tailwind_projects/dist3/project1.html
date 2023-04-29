@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spicy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output3.css">
+</head>
+<style>
+    @media (max-width: 645px){
+        .navbar{flex-direction: column;}
+        .navMenue{flex-direction: column; background: #dc2626; padding: 20px; width: 90%;
+            border-radius: 20px; display: block;}
+        .navMenue li {text-align: center; flex-direction: column; padding: 10px; margin: 0px 5px;}
+        .navMenue li a{color: white; font-size:larger;}
+        .navMenue li a:hover{padding: 3px; border-radius: 4px;
+            color:white;}
+        .topbar{align-items: center; justify-content: space-between; width: 100%; display: flex;}
+        .topbar .toggle{ display:flex;}
+        .btn {display:none;}
+        .home{ flex-direction: column; margin-top: 3em; height:auto; overflow-x:hidden;}
+    }
+</style>
+<body class="overflow-hidden">
+    <!--Navbar-->
+    <div class="flex navbar justify-between items-center mt-4 px-4">
+        <div class="text-2xl topbar font-bold text-red-800">
+            Sauce
+            <img src="./img/menu.svg" class="toggle w-16 hidden h-16" alt="toggle">
+        </div>
+        <ul class="flex space-x-4 justify-evenly navMenue">
+            <li><a href="#" class="list-none hover:underline-offset-8 hover:underline duration-200
+                         ease-linear font-medium
+                    text-slate-800 hover:tracking-widest">Product</a></li>
+            <li><a href="# "class="list-none hover:underline-offset-8 hover:underline font-medium
+                         text-slate-800 duration-200 ease-linear hover:tracking-widest">Features</a></li>
+            <li><a href="#"class="capitalize list-none hover:underline-offset-8 duration-200
+                                  ease-linear hover:underline hover:tracking-widest font-medium
+                    text-slate-800">shop</a></li>
+            <li><a href="#" class="list-non hover:tracking-widest duration-200 ease-linear hover:underline-offset-8 hover:underline font-medium
+                    text-slate-800">Contact</a></li>
+        </ul>
+            <div class="border-md btn rounded fond-semibold">
+                <button class="duration-200 ease-linear hover:tracking-widest py-2 px-4 border rounded-xl border-gray-800 bg-transparent">Login</button>
+                <button class="hover:tracking-widest duration-200 ease-linear rounded py-2 px-4 text-white rounded-xl bg-black capitalize">sing up</button>
+            </div>
+    </div>
+    
+    <!--Hero-section-->
+    
+    <div class="relative items-center home w-full mt-4 h-screen z-40 bg-gradient-to-t from-gray-500 to-white flex justify-center px-[60]">
+        <div class="relative max-w-[800px]">
+            <h1 class="font-medium text-9xl capitalize text-slate-900">spice up to
+                <br>Mood up</h1>
+            <p class="text-slate-700 text-7xl font-normal capitalize">spicy vegetable rice</p>
+            <div class="mt-10">
+                <button class="hover:tracking-widest duration-200 ease-linear btn py-2 px-4 border rounded-xl border-gray-800
+                    bg-gray-900 hover:shadow-xl">
+                    <a href="#" class="text-white no-underline">Book a table</a>
+                </button>
+                <button class="hover:tracking-widest duration-200 ease-linear btn py-2 px-4 border rounded-xl border-gray-800
+                               bg-transparent hover:shadow-xl">
+                    <a href="#" class="text-gray-200 no-underline">View Menue</a>
+                </button>
+            </div>
+        </div>
+        <div class="h-[500px] w-[500px]">
+            <div class="">
+                <img src="/img/plate1.png" class="imag3" alt="food">
+                <div class="flex w-30 justify-center">
+                    <div class="cursor-pointer w-5 h-5 dot1 m-2 bg-gray-600 rounded-full"></div>
+                    <div class="cursor-pointer w-5 h-5 dot2 m-2 bg-gray-600 rounded-full"></div>
+                    <div class="cursor-pointer w-5 h-5 dot3 m-2 bg-gray-600 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="/index.js"></script>
+</body>
+</html>
