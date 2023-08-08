@@ -1,0 +1,114 @@
+ here is a list of all the concept you need to make your website unique
+
+ hover on reveal text lets make that happen
+ create a button which will be able to make the changes while i hover over it
+ container which will be able to cover the text and prevent overflow
+ item container which will act as the positioning factor for the text
+ we need an after effect and a default effect which will animate as i hover over it
+
+ use gsap to make the animation happen
+
+ that was epic found just made some of my own libraries onjavascript and they turn out to be helpful
+ well place all the items in a lined  form like they are in a box
+ then make them centered
+ use the has selector today is gonna be fun
+ split all the text into  an array of letters
+ has selector making selection of elements no matter their parent and position as long as they share
+ the same class attributes
+
+----make a script to run and create all the neccessary files you need to get started with a web
+project using either bash or vimscript----
+
+ websites to recreate
+ nathan.smithdesign == https://www.nathansmith.design/#portfolio-grid
+ dylanbrower === https://www.dylanbrouwer.design/work
+ studio9 contact page == studio9.com
+ the whole website == https://camillemormal.com/
+
+
+
+ some cool math tricks for javescript ==>
+ math.ceil == means round up the number to the nearest integer
+ math.floor == means round down the number to the nearest integer the decimal number has no effect
+ on it
+ math.abs == means return the absolute value of the number (changing the negative numbers into
+         positive one
+
+
+
+how to use the gsap.utils.mapRange() .snap() .interpolate() == all are playing with ranges animation can be defined on how
+to occur
+mapRange == playing the animation in the defined range just like python range
+            gsap.util.mapRange(inMin, inMax, outMin, outMax, valueToMap)
+            inMax and inMin represent the range at which we are allowed to play with think of the inMin as the starting point and the
+            inMax as the ending point of the range.
+            outMin and outMax == what outputs are you providing are going to be used as the guidlines of out starting point and ending
+            points.
+            assume you have your screen as the distance you can be able to tell the range which gsap should be playing with is the
+            starting point of the screen which is 0 to the end of the screen on the far right which is 1386pixel
+            that will act as the layout of the grid we need actual values to represent the left side and the right side think of them
+            the starting point and the ending point which we need gsap to play with.
+            to be getting the actual points of any kind of movement made on the plane we need an object to keep track and thats where
+            we place the valueToMap.
+
+    example:"ALL MADE BY ME ALONE"
+    const aniMe = gsap.utils.mapRange(0, innerWidth, 0, 10,);
+    //chanig the background color
+    document.body.style.backgroundColor= "#3ee2";
+    const maKe = document.querySelector(".target");
+    const aniMe = gsap.utils.mapRange(0, innerWidth, 0, 10);
+    //making the display function
+    function display(value){
+      maKe.innerText = "this is my current positon " + value;
+    }
+    //making the gsap animation
+    function onMouseMove(mouseX) {
+      const range = Math.ceil(aniMe(mouseX));
+      display(range);
+    }
+    //adding the event
+     document.onmousemove = (e) => {
+      const mouseX = Math.ceil(e.clientX);
+      onMouseMove(mouseX);
+    }
+    
+
+how forEach works == making an iteration over a list of items you can make each element have its own gsap animation
+how for...of works == makes the same kind of iteration as the forEach function but with slight bit of power that is youu
+can be able to add your own functions conditions if you want to and it will work
+basicaly the difference between the foreach and for...of is the power one was made specificaly to perfect the art of looping 
+and iteration while the other brought up some little bit of power to make some tweaks and changes
+valueToMap is what we are going to use as the main 
+
+you can be able to turn a list in javascript to an array using the spread syntax "soo cool!!!!" == [...]
+to make nodelist use the .querySelectorAll() to turn the elements with the same class name into a list
+and with the power of spread syntax in your head you can just imagine some of the cool option you can play
+with.
+<div class="power">
+    <p class="char">l</p>
+    <p class="char">i</p>
+    <p class="char">b</p>
+    <p class="char">e</p>
+    <p class="char">r</p>
+    <p class="char">a</p>
+    <p class="char">t</p>
+    <p class="char">i</p>
+    <p class="char">o</p>
+    <p class="char">n</p>
+</div>
+
+const claSS = document.querySelector(".power");
+const plaY = [...claSS.querySelectorAll("char")];
+
+now with this we can be able to loop over the elements each of them and add all the other animation
+let's actually do that
+for(const single of plaY){          //for each of the elements in the array list plaY loop over each one of them
+    const len = single.length;
+
+what does tranfrom origin mean and how does it work?? == where do you want the transformation to start
+how does will-change affect the elements?? == to answer it tells the browser what will be happening
+to the elements more like giving a hint to the browser
+snap == how do you want the number to keep on increamenting accoriding to the value given by the snap
+
+testing how vim works with visual word selection like these in a code
+    "hello there what about we learn how to select the setences and the quotes"

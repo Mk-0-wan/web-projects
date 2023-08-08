@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap');
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+    background:black;
+    color:white;
+    font-family: DM Serif Display;
+}
+.container, .container2 {
+    height:100vh;
+    position:absolute;
+    clip-path:polygon(4% 4%, 96% 4%, 96% 96%, 51% 96%, 4% 96%, 4% 52%) ;
+    width:100%;
+    transition:clip-path 1.2s ease;
+
+}
+.image {
+    background:url("https://images.unsplash.com/photo-1684529419842-6b0284bc83cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=859&q=80");
+    background-size:cover;
+    height:100vh;
+}
+.content {
+    display:grid;
+    font-size: 4em;
+    place-items:center;
+    position:absolute;
+    z-index:3;
+    height:100vh;
+    width:100%;
+}
+
+.container2 {
+    height:100vh;
+    z-index:-2;
+}
+.image1 {
+    background:url("https://images.unsplash.com/photo-1681652336577-946c77603021?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80");
+    background-size:cover;
+    height:100vh;
+}

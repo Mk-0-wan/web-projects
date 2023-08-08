@@ -1,0 +1,93 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    background:black;
+}
+body {
+    position:relative;
+    width:100vw;
+    height:100vh;
+    font-family:"Space mono", monospace;
+}
+.wrapper {
+    position:absolute;
+    top:50%;
+    width:45vmin;
+    height:46vmin;
+    left:50%;
+    text-align:center;
+    transform:translate(-50%, -50%);
+}
+.text {
+    color:white;
+    display:inline-block;
+    font-size: 3em;
+    text-transform:uppercase;
+    font-weight:500;
+}
+.wrapper:has(.fancy:hover) .text:not(.fancy:hover) {
+    opacity:0.2;
+}
+.container {
+    display:flex;
+    justify-content:space-between;
+}
+.fancy > .splits {
+    display:inline-block;
+    background:transparent;
+    transition: transform 350ms ease;
+}
+.fancy:hover > .splits {
+    transition-duration:800ms;
+    background:transparent;
+}
+.fancy:hover > .splits:nth-child(1) {
+    transform: translate(-80%, -40%) rotate(-5deg);
+}
+.fancy:hover > .splits:nth-child(2) {
+    transform: translate(-40%, 40%) rotate(8deg);
+}
+.fancy:hover > .splits:nth-child(3) {
+    transform: translate(-40%, -20%) rotate(-6deg);
+}
+.fancy:hover > .splits:nth-child(4) {
+    transform: translate(0%, 60%) rotate(8deg);
+}
+.fancy:hover > .splits:nth-child(5) {
+    transform: translate(-30%, -15%) rotate(-9deg);
+}
+.fancy:hover > .splits:nth-child(6) {
+    transform: translate(0%, -70%) rotate(-5deg);
+}
+.fancy:hover > .splits:nth-child(7) {
+    transform: translate(-80%, 30%) rotate(-7deg);
+}
+.fancy:hover > .splits:nth-child(8) {
+    transform: translate(-40%, -30%) rotate(22deg);
+}
+.fancy:hover > .splits:nth-child(9) {
+    transform: translate(-50%, 60%) rotate(-9deg);
+}
+.fancy:hover > .splits:nth-child(10) {
+    transform: translate(0%, 13%) rotate(-2deg);
+}
+.fancy:hover > .splits:nth-child(11) {
+    transform: translate(70%, -60%) rotate(-15deg);
+}
+.fancy:hover > .splits:nth-child(12) {
+    transform: translate(20%, 23%) rotate(4deg);
+}
+.fancy:hover > .splits:nth-child(13) {
+    transform: translate(90%, -60%) rotate(-28deg);
+}
+@keyframes bounce{
+    from{ transform:translateY(0);}
+    50%{ transform:translateY(-20%);}
+    75%{ transform:translateY(20%);}
+    to{ transform:translateY(0);}
+}
+/*.splits:hover {
+    animation: bounce 1200ms infinite;
+    background:transparent;
+}*/
